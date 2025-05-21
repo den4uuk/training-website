@@ -5,149 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ареал їжаків">
   <title>Ареал їжаків</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="custom-green-theme">
-  <header class="text-center bg-success text-white py-3">
-    <h1>Ареал їжаків</h1>
-    <nav class="nav justify-content-center">
-      <a href="../index.html" class="nav-link text-white">Головна</a>
-      <a href="morphology.html" class="nav-link text-white">Зовнішній вигляд</a>
-      <a href="nutrition.html" class="nav-link text-white">Харчування</a>
-      <a href="photo.html" class="nav-link text-white">Фотогалерея</a>
+  <header class="text-center bg-blue-600 text-white py-3">
+    <h1 class="text-3xl font-bold">Ареал їжаків</h1>
+    <nav class="flex justify-center space-x-4 mt-2">
+      <a href="../index.html" class="nav-link text-white hover:underline">Головна</a>
+      <a href="morphology.html" class="nav-link text-white hover:underline">Зовнішній вигляд</a>
+      <a href="nutrition.html" class="nav-link text-white hover:underline">Харчування</a>
+      <a href="photo.html" class="nav-link text-white hover:underline">Фотогалерея</a>
     </nav>
   </header>
 
-  <main class="container py-4">
-    <div class="row">
-      <div class="col-md-3">
-        <aside class="sticky-top pt-3">
-          <nav class="nav flex-column">
-            <h4>Зміст</h4>
-            <a href="#continentsList" class="nav-link" data-bs-toggle="collapse">Континенти</a>
-            <a href="#subcontinentsList" class="nav-link" data-bs-toggle="collapse">Субконтиненти</a>
-            <a href="#countriesList" class="nav-link" data-bs-toggle="collapse">Країни</a>
-            <a href="#introducedList" class="nav-link" data-bs-toggle="collapse">Інтродуковані в</a>
-            <a href="#biogeographicList" class="nav-link" data-bs-toggle="collapse">Біогеографічні зони</a>
-            <a href="#biomesList" class="nav-link" data-bs-toggle="collapse">WWF Біоми</a>
+  <main class="container mx-auto py-8 px-4">
+    <div class="flex flex-col md:flex-row">
+      <div class="md:w-1/4 mb-6 md:mb-0">
+        <aside class="sticky top-4 pt-3">
+          <nav class="flex flex-col space-y-2">
+            <h4 class="text-lg font-semibold mb-2">Зміст</h4>
+            <a href="#continentsList" class="nav-link text-blue-700 hover:underline">Континенти</a>
+            <a href="#subcontinentsList" class="nav-link text-blue-700 hover:underline">Субконтиненти</a>
+            <a href="#countriesList" class="nav-link text-blue-700 hover:underline">Країни</a>
+            <a href="#introducedList" class="nav-link text-blue-700 hover:underline">Інтродуковані в</a>
+            <a href="#biogeographicList" class="nav-link text-blue-700 hover:underline">Біогеографічні зони</a>
+            <a href="#biomesList" class="nav-link text-blue-700 hover:underline">WWF Біоми</a>
           </nav>
         </aside>
       </div>
-      <div class="col-md-9">
-        <h2 class="h2 text-success">Ареал</h2>
-        
+      <div class="md:w-3/4">
+        <h2 class="text-2xl text-blue-700 font-semibold mb-4">Ареал</h2>
         <article class="mt-4">
           <section id="continents">
-            <h3>
-              <button class="btn btn-success w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#continentsList">
-                Континенти
-              </button>
-            </h3>
-            <div class="collapse" id="continentsList">
-              <ul class="list-group mb-3">
-                <li class="list-group-item">Європа</li>
-                <li class="list-group-item">Азія</li>
-                <li class="list-group-item">Африка</li>
-              </ul>
-            </div>
+            <h3 class="text-xl font-semibold mb-2">Континенти</h3>
+            <ul class="list-disc pl-6 mb-4">
+              <li>Європа</li>
+              <li>Азія</li>
+              <li>Африка</li>
+            </ul>
           </section>
-
           <section id="subcontinents">
-            <h3>
-              <button class="btn btn-success w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#subcontinentsList">
-                Субконтиненти
-              </button>
-            </h3>
-            <div class="collapse" id="subcontinentsList">
-              <ul class="list-group mb-3">
-                <li class="list-group-item">Південна Європа</li>
-                <li class="list-group-item">Північна Африка</li>
-                <li class="list-group-item">Західна Азія</li>
-              </ul>
-            </div>
+            <h3 class="text-xl font-semibold mb-2">Субконтиненти</h3>
+            <ul class="list-disc pl-6 mb-4">
+              <li>Південна Європа</li>
+              <li>Північна Африка</li>
+              <li>Західна Азія</li>
+            </ul>
           </section>
-
           <section id="countries">
-            <h3>
-              <button class="btn btn-success w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#countriesList">
-                Країни
-              </button>
-            </h3>
-            <div class="collapse" id="countriesList">
-              <ul class="list-group mb-3">
-                <li class="list-group-item">Україна</li>
-                <li class="list-group-item">Польща</li>
-                <li class="list-group-item">Німеччина</li>
-                <li class="list-group-item">Франція</li>
-                <li class="list-group-item">Іспанія</li>
-                <li class="list-group-item">Італія</li>
-                <li class="list-group-item">Велика Британія</li>
-                <li class="list-group-item">Португалія</li>
-                <li class="list-group-item">Греція</li>
-                <li class="list-group-item">Туреччина</li>
-                <li class="list-group-item">Іран</li>
-                <li class="list-group-item">Ізраїль</li>
-                <li class="list-group-item">Марокко</li>
-                <li class="list-group-item">Єгипет</li>
-                <li class="list-group-item">Туніс</li>
-                <li class="list-group-item">Алжир</li>
-                <!-- ...можна додати інші країни ареалу їжаків... -->
-              </ul>
-            </div>
+            <h3 class="text-xl font-semibold mb-2">Країни</h3>
+            <ul class="list-disc pl-6 mb-4">
+              <li>Україна</li>
+              <li>Польща</li>
+              <li>Німеччина</li>
+              <li>Франція</li>
+              <li>Іспанія</li>
+              <li>Італія</li>
+              <li>Велика Британія</li>
+              <li>Португалія</li>
+              <li>Греція</li>
+              <li>Туреччина</li>
+              <li>Іран</li>
+              <li>Ізраїль</li>
+              <li>Марокко</li>
+              <li>Єгипет</li>
+              <li>Туніс</li>
+              <li>Алжир</li>
+            </ul>
           </section>
-
           <section id="introduced">
-            <h3>
-              <button class="btn btn-success w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#introducedList">
-                Інтродуковані в
-              </button>
-            </h3>
-            <div class="collapse" id="introducedList">
-              <ul class="list-group mb-3">
-                <li class="list-group-item">Нова Зеландія</li>
-                <li class="list-group-item">Острів Мадейра</li>
-                <li class="list-group-item">Острів Реюньйон</li>
-              </ul>
-            </div>
+            <h3 class="text-xl font-semibold mb-2">Інтродуковані в</h3>
+            <ul class="list-disc pl-6 mb-4">
+              <li>Нова Зеландія</li>
+              <li>Острів Мадейра</li>
+              <li>Острів Реюньйон</li>
+            </ul>
           </section>
-
           <section id="biogeographic">
-            <h3>
-              <button class="btn btn-success w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#biogeographicList">
-                Біогеографічні зони
-              </button>
-            </h3>
-            <div class="collapse" id="biogeographicList">
-              <ul class="list-group mb-3">
-                <li class="list-group-item">Палеарктика</li>
-                <li class="list-group-item">Ефіопська область</li>
-              </ul>
-            </div>
+            <h3 class="text-xl font-semibold mb-2">Біогеографічні зони</h3>
+            <ul class="list-disc pl-6 mb-4">
+              <li>Палеарктика</li>
+              <li>Ефіопська область</li>
+            </ul>
           </section>
-
           <section id="biomes">
-            <h3>
-              <button class="btn btn-success w-100 text-start" type="button" data-bs-toggle="collapse" data-bs-target="#biomesList">
-                WWF Біоми
-              </button>
-            </h3>
-            <div class="collapse" id="biomesList">
-              <ul class="list-group">
-                <li class="list-group-item">Ліси помірного поясу</li>
-                <li class="list-group-item">Луки та чагарники</li>
-                <li class="list-group-item">Середземноморські ліси</li>
-              </ul>
-            </div>
+            <h3 class="text-xl font-semibold mb-2">WWF Біоми</h3>
+            <ul class="list-disc pl-6 mb-4">
+              <li>Ліси помірного поясу</li>
+              <li>Луки та чагарники</li>
+              <li>Середземноморські ліси</li>
+            </ul>
           </section>
         </article>
       </div>
     </div>
   </main>
 
-  <footer class="text-center bg-dark text-white py-2">
+  <footer class="text-center bg-blue-900 text-white py-2">
     <p>&copy; 2025 Сайт про їжаків</p>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
