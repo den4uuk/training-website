@@ -3,18 +3,18 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function Photo() {
   const images = [
-    { src: '/images/1200px-haas-in-het-grasjpg.webp', alt: 'Зайці в траві' },
-    { src: '/images/1200px-hasebeioberwerbejpg.webp', alt: 'Зайці в полі' },
-    { src: '/images/european-hare-6121jpg.webp', alt: 'Європейський заєць' },
-    { src: '/images/fFKuESpf7VTCGBNPscig.webp', alt: 'Зайці на лузі' },
-    { src: '/images/halljnes.webp', alt: 'Зайці в лісі' },
-    { src: '/images/zu6YRoYqGYVyExZ54dDT.webp', alt: 'Зайці на лузі' }
+    { src: 'https://s3.animalia.bio/animals/photos/full/1x1/braunbrustigel-3.webp?id=37ec377359d431af453ef95163d27193', alt: 'Їжак у траві' },
+    { src: 'https://s3.animalia.bio/animals/photos/small/1x1/hedgehog-1.webp?id=37ec377359d431af453ef95163d27193', alt: 'Їжак у лісі' },
+    { src: 'https://s3.animalia.bio/animals/photos/full/original/erinaceus-europaeus-2.webp', alt: 'Європейський їжак' },
+    { src: 'https://s3.animalia.bio/animals/photos/full/original/erinaceus-europaeus-5.webp', alt: 'Їжак на галявині' },
+    { src: 'https://s3.animalia.bio/animals/photos/full/original/erinaceus-europaeus-16.webp', alt: 'Їжак у місті' },
+    { src: 'https://s3.animalia.bio/animals/photos/full/original/erinaceus-europaeus-18.webp', alt: 'Їжак на стежці' }
   ];
 
   return (
     <main className="container px-4 py-4 flex-grow-1">
       <article>
-        <h2 className="h2 text-success mb-4">Фотогалерея зайців</h2>
+        <h2 className="h2 text-success mb-4">Фотогалерея їжаків</h2>
         <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-indicators">
             {images.map((_, index) => (

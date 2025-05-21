@@ -4,19 +4,19 @@ function Morphology() {
       <article>
         <section>
           <h3 className="h3 text-success">Зовнішній вигляд</h3>
-          <p>Зайці - це маленькі тварини з м'яким пухнастим хутром, яке може бути різного кольору. Вони мають довгі вуха, великі очі та короткий хвіст.</p>
+          <p>Їжаки — це маленькі ссавці з колючками на спині, які служать їм захистом. Вони мають короткі лапи, гострий писочок та маленькі вуха.</p>
         </section>
         <section>
           <h3 className="h3 text-success">Особливості будови</h3>
           <ul>
-            <li>Довжина тіла 55—70 см, довжина клиноподібного хвоста 8—12 см, вага 4—10 кг.</li>
-            <li>Задні ноги в русака набагато довші за передні, ступні вузькі і витягнуті, повністю вкриті шерстю.</li>
-            <li>Вуха довгі, ланцетоподібні, пригнуті до голови, заходять далі, ніж кінець морди; по зовнішньому краю вуха йде темна смуга.</li>
+            <li>Довжина тіла 20—30 см, довжина хвоста 1,5—3 см, вага 600—1200 г.</li>
+            <li>Тіло вкрите колючками (видозмінене волосся), черевце м’яке, без колючок.</li>
+            <li>Має короткі лапи з гострими кігтями, мордочка видовжена, вуха маленькі, очі чорні та блискучі.</li>
           </ul>
         </section>
         <figure className="text-center">
-          <img src="https://tut-cikavo.com/images/7_new/young-hare.jpg" alt="Зайці на лузі" className="img-fluid rounded my-4"/>
-          <figcaption className="text-muted">Молодий заяць</figcaption>
+          <img src="https://s3.animalia.bio/animals/photos/full/original/hedgehog-erinaceus-europaeus-1.webp" alt="Їжак на галявині" className="img-fluid rounded my-4"/>
+          <figcaption className="text-muted">Молодий їжак</figcaption>
         </figure>
       </article>
     </main>
